@@ -2,6 +2,10 @@
 
 A simple web server built with **Go (Golang)** using the standard `net/http` package. This project demonstrates how to serve static web pages, handle routes, and process HTML form submissions.
 
+<p align="center">
+  <img src="assets/workflow.png" alt="Go HTTP Server Workflow" width="900">
+</p>
+
 ## Features
 
 * 🚀 Serve static HTML pages
@@ -21,60 +25,7 @@ go-http-server/
 └── static/
     ├── index.html
     └── form.html
-```
 
-## Prerequisites
-
-* Go 1.20 or later
-
-Check your Go installation:
-
-```bash
-go version
-```
-
-## Running the Project
-
-Clone the repository:
-
-```bash
-git clone https://github.com/<your-username>/<repository-name>.git
-```
-
-Move into the project directory:
-
-```bash
-cd <repository-name>
-```
-
-Run the application:
-
-```bash
-go run main.go
-```
-
-The server will start on:
-
-```text
-http://localhost:8000
-```
-
-## Available Routes
-
-| Route        | Method | Description                      |
-| ------------ | ------ | -------------------------------- |
-| `/`          | GET    | Serves `index.html`              |
-| `/form.html` | GET    | Displays the HTML form           |
-| `/form`      | POST   | Receives and processes form data |
-| `/hello`     | GET    | Returns `Hello!`                 |
-
-## Form Submission
-
-The form sends a POST request to:
-
-```text
-/form
-```
 
 Example fields:
 
