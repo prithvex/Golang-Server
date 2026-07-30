@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        .container{
+            width:450px;
+            margin:70px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 5px 15px rgba(0,0,0,.1);
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:25px;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            margin-bottom:5px;
+        }
+
+        input,
+        textarea{
+
+            width:100%;
+            padding:12px;
+            border:1px solid #ccc;
+            border-radius:6px;
+            font-size:16px;
+
+        }
+
+        textarea{
+            resize:none;
+            height:120px;
+        }
+
+        button{
+
+            width:100%;
+            margin-top:20px;
+            padding:15px;
+            background:#28a745;
+            color:white;
+            border:none;
+            border-radius:8px;
+            cursor:pointer;
+            font-size:16px;
+
+        }
+
+        button:hover{
+            background:#218838;
+        }
+
+        .back{
+            display:block;
+            text-align:center;
+            margin-top:20px;
+            text-decoration:none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Contact Form</h2>
+
+    <form action="/form" method="POST">
+
+        <label>Name</label>
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required>
+
+        <label>Address</label>
+
+        <textarea
+            name="address"
+            placeholder="Enter your address"
+            required></textarea>
+
+        <button type="submit">
+            Submit
+        </button>
+
+    </form>
+
+    <a href="/" class="back">
+        ← Back to Home
+    </a>
+
+</div>
+
+</body>
+</html>
